@@ -1,11 +1,24 @@
 package com.attilakasza.bakingapp.models;
 
+import com.google.gson.annotations.Expose;
+import com.google.gson.annotations.SerializedName;
+
 public class Step {
 
+    @Expose
+    @SerializedName("id")
     private int mId;
+    @Expose
+    @SerializedName("shortDescription")
     private String mShortDescription;
+    @Expose
+    @SerializedName("description")
     private String mDescription;
+    @Expose
+    @SerializedName("videoURL")
     private String mVideoUrl;
+    @Expose
+    @SerializedName("thumbnailURL")
     private String mThumbnailUrl;
 
     public int getmId() {

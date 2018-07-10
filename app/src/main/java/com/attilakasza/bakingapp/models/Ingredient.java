@@ -1,9 +1,18 @@
 package com.attilakasza.bakingapp.models;
 
+import com.google.gson.annotations.Expose;
+import com.google.gson.annotations.SerializedName;
+
 public class Ingredient {
 
+    @Expose
+    @SerializedName("quantity")
     private String mQuantity;
+    @Expose
+    @SerializedName("measure")
     private String mMeasure;
+    @Expose
+    @SerializedName("ingredient")
     private String mIngredient;
 
     public String getmQuantity() {

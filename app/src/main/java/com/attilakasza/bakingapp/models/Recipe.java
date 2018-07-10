@@ -1,14 +1,29 @@
 package com.attilakasza.bakingapp.models;
 
+import com.google.gson.annotations.Expose;
+import com.google.gson.annotations.SerializedName;
+
 import java.util.ArrayList;
 
 public class Recipe {
 
+    @Expose
+    @SerializedName("id")
     private int mId;
+    @Expose
+    @SerializedName("name")
     private String mName;
+    @Expose
+    @SerializedName("ingredients")
     private ArrayList<Ingredient> mIngredients;
+    @Expose
+    @SerializedName("steps")
     private ArrayList<Step> mSteps;
+    @Expose
+    @SerializedName("servings")
     private String mServings;
+    @Expose
+    @SerializedName("image")
     private String mImage;
 
     public int getmId() {
