@@ -12,22 +12,24 @@ import com.attilakasza.bakingapp.models.Recipe;
 
 import java.util.ArrayList;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
 public class MainActivity extends AppCompatActivity implements RecipeAdapter.OnItemClickListener {
 
+    @BindView(R.id.rv_recipe) RecyclerView mRecyclerView;
     private ArrayList<Recipe> mRecipes;
-    private RecyclerView mRecyclerView;
     private RecipeAdapter mRecipeAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        ButterKnife.bind(this);
 
-        mRecyclerView = findViewById(R.id.rv_recipe);
         RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(this);
         mRecyclerView.setLayoutManager(mLayoutManager);
 
