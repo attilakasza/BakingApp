@@ -1,10 +1,12 @@
-package com.attilakasza.bakingapp;
+package com.attilakasza.bakingapp.activities;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
+import com.attilakasza.bakingapp.R;
 import com.attilakasza.bakingapp.adapters.RecipeAdapter;
 import com.attilakasza.bakingapp.helpers.RecipeService;
 import com.attilakasza.bakingapp.helpers.RetrofitBuilder;
@@ -21,6 +23,7 @@ import retrofit2.Response;
 public class MainActivity extends AppCompatActivity implements RecipeAdapter.OnItemClickListener {
 
     @BindView(R.id.rv_recipe) RecyclerView mRecyclerView;
+    public static String RECIPE = "RECIPE";
     private ArrayList<Recipe> mRecipes;
     private RecipeAdapter mRecipeAdapter;
 
@@ -54,6 +57,21 @@ public class MainActivity extends AppCompatActivity implements RecipeAdapter.OnI
 
     @Override
     public void onClick(Recipe clickedRecipe) {
+        Bundle bundle = new Bundle();
+        ArrayList<Recipe> recipes = new ArrayList<>();
+        recipes.add(clickedRecipe);
+        bundle.putParcelableArrayList(RECIPE, recipes);
 
+        int cakeId = clickedRecipe.getmId();
+        int yellowCakeId = 3;
+        if (cakeId == yellowCakeId) {
+            for (int i = 7; i < 13; i++) {
+                clickedRecipe.getmSteps().get(i).setmId(i);
+            }
+        }
+
+        final Intent intent = new Intent(this, DetailActivity.class);
+        intent.putExtras(bundle);
+        startActivity(intent);
     }
 }
