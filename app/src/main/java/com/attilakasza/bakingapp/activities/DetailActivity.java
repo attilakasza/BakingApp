@@ -12,32 +12,43 @@ import com.attilakasza.bakingapp.models.Recipe;
 import com.attilakasza.bakingapp.models.Step;
 
 import java.util.ArrayList;
+import java.util.Objects;
 
 public class DetailActivity extends AppCompatActivity implements StepAdapter.OnItemClickListener, ConnectivityReceiver.ConnectivityReceiverListener {
 
     public static String RECIPE = "RECIPE";
     private ArrayList<Recipe> mRecipes;
-    private String mRecipeName;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail);
 
-        getSupportActionBar().setHomeButtonEnabled(true);
+        Objects.requireNonNull(getSupportActionBar()).setHomeButtonEnabled(true);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        Bundle selectedRecipeBundle = getIntent().getExtras();
-        mRecipes = selectedRecipeBundle.getParcelableArrayList(RECIPE);
-        mRecipeName = mRecipes.get(0).getmName();
-        getSupportActionBar().setTitle(mRecipeName);
+        if (savedInstanceState == null) {
+            Bundle selectedRecipeBundle = getIntent().getExtras();
+            mRecipes = Objects.requireNonNull(selectedRecipeBundle).getParcelableArrayList(RECIPE);
 
-        final RecipeFragment fragment = new RecipeFragment();
-        fragment.setArguments(selectedRecipeBundle);
-        FragmentManager fragmentManager = getSupportFragmentManager();
-        fragmentManager.beginTransaction()
-                .replace(R.id.fragment_container, fragment)
-                .commit();
+            final RecipeFragment fragment = new RecipeFragment();
+            fragment.setArguments(selectedRecipeBundle);
+            FragmentManager fragmentManager = getSupportFragmentManager();
+            fragmentManager.beginTransaction()
+                    .replace(R.id.fragment_container, fragment)
+                    .commit();
+        } else {
+            mRecipes = savedInstanceState.getParcelableArrayList(RECIPE);
+        }
+
+        String recipeName = Objects.requireNonNull(mRecipes).get(0).getmName();
+        getSupportActionBar().setTitle(recipeName);
+    }
+
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+        outState.putParcelableArrayList(RECIPE, mRecipes);
     }
 
     @Override
