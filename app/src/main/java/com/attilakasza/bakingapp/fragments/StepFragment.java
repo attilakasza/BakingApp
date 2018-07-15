@@ -9,23 +9,18 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.attilakasza.bakingapp.R;
-import com.attilakasza.bakingapp.models.Recipe;
 import com.attilakasza.bakingapp.models.Step;
-
-import java.util.ArrayList;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-import static com.attilakasza.bakingapp.activities.DetailActivity.RECIPE;
-import static com.attilakasza.bakingapp.activities.DetailActivity.RECIPE_STEP;
+import static com.attilakasza.bakingapp.fragments.StepsFragment.RECIPE_STEP;
 
 
 public class StepFragment extends Fragment {
 
     @BindView(R.id.tv_step) TextView mDescription;
-    private ArrayList<Recipe> mRecipes;
-    private ArrayList<Step> mSteps = new ArrayList<>();
+    private Step mSteps = new Step();
 
     public StepFragment() {
         // Required empty public constructor
@@ -38,14 +33,13 @@ public class StepFragment extends Fragment {
         ButterKnife.bind(this, rootView);
 
         if(savedInstanceState != null) {
-            mSteps = savedInstanceState.getParcelableArrayList(RECIPE_STEP);
+            mSteps = savedInstanceState.getParcelable(RECIPE_STEP);
         }
         else {
-            mSteps = getArguments().getParcelableArrayList(RECIPE_STEP);
-            mRecipes = getArguments().getParcelableArrayList(RECIPE);
+            mSteps = getArguments().getParcelable(RECIPE_STEP);
         }
 
-        mDescription.setText(mSteps.get(0).getmDescription());
+        mDescription.setText(mSteps.getmDescription());
 
         return rootView;
     }
@@ -53,7 +47,6 @@ public class StepFragment extends Fragment {
     @Override
     public void onSaveInstanceState(@NonNull Bundle outState) {
         super.onSaveInstanceState(outState);
-        outState.putParcelableArrayList(RECIPE, mRecipes);
-        outState.putParcelableArrayList(RECIPE_STEP, mSteps);
+        outState.putParcelable(RECIPE_STEP, mSteps);
     }
 }

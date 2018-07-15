@@ -7,7 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import com.attilakasza.bakingapp.R;
 import com.attilakasza.bakingapp.adapters.StepAdapter;
 import com.attilakasza.bakingapp.fragments.RecipeFragment;
-import com.attilakasza.bakingapp.fragments.StepFragment;
+import com.attilakasza.bakingapp.fragments.StepsFragment;
 import com.attilakasza.bakingapp.helpers.ConnectivityReceiver;
 import com.attilakasza.bakingapp.models.Recipe;
 import com.attilakasza.bakingapp.models.Step;
@@ -66,7 +66,7 @@ public class DetailActivity extends AppCompatActivity implements StepAdapter.OnI
 
     @Override
     public void onClick(Step clickedStep) {
-        final StepFragment fragment = new StepFragment();
+        final StepsFragment fragment = new StepsFragment();
         FragmentManager fragmentManager = getSupportFragmentManager();
 
         Bundle stepBundle = new Bundle();
