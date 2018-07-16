@@ -9,6 +9,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.attilakasza.bakingapp.R;
@@ -28,6 +29,7 @@ import com.google.android.exoplayer2.ui.SimpleExoPlayerView;
 import com.google.android.exoplayer2.upstream.BandwidthMeter;
 import com.google.android.exoplayer2.upstream.DefaultDataSourceFactory;
 import com.google.android.exoplayer2.util.Util;
+import com.squareup.picasso.Picasso;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -39,6 +41,7 @@ public class StepFragment extends Fragment {
     @BindView(R.id.player_view) SimpleExoPlayerView mExoPlayerView;
     @BindView(R.id.main_media_frame) FrameLayout mFrame;
     @BindView(R.id.tv_step) TextView mDescription;
+    @BindView(R.id.iv_thumbnail) ImageView mThumbnail;
     public static String CURRENT_POSITION = "Current_Position";
     private Step mSteps = new Step();
     private SimpleExoPlayer mExoPlayer;
@@ -70,10 +73,28 @@ public class StepFragment extends Fragment {
         mDescription.setText(mSteps.getmDescription());
 
         mVideoUrl = mSteps.getmVideoUrl();
+        String thumbnailUrl = mSteps.getmThumbnailUrl();
         if (!mVideoUrl.isEmpty()) {
+            mThumbnail.setVisibility(View.GONE);
             initializeExoPlayer(Uri.parse(mVideoUrl));
+        } else {
+            mThumbnail.setVisibility(View.VISIBLE);
+            mExoPlayerView.setVisibility(View.GONE);
+            mFrame.setVisibility(View.GONE);
+            if (!thumbnailUrl.isEmpty()) {
+                Picasso.with(getContext())
+                        .load(Uri.parse(thumbnailUrl))
+                        .placeholder(R.drawable.ic_videocam_off)
+                        .error(R.drawable.ic_error)
+                        .into(mThumbnail);
+            } else {
+                Picasso.with(getContext())
+                        .load(R.drawable.ic_videocam_off)
+                        .placeholder(R.drawable.ic_videocam_off)
+                        .error(R.drawable.ic_error)
+                        .into(mThumbnail);
+            }
         }
-
         return rootView;
     }
 
