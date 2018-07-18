@@ -6,13 +6,18 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
+import android.support.annotation.Nullable;
+import android.support.annotation.VisibleForTesting;
 import android.support.design.widget.Snackbar;
+import android.support.test.espresso.IdlingResource;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.TextView;
 
+import com.attilakasza.bakingapp.IdlingResource.SimpleIdlingResource;
 import com.attilakasza.bakingapp.R;
 import com.attilakasza.bakingapp.adapters.RecipeAdapter;
 import com.attilakasza.bakingapp.helpers.ConnectivityReceiver;
@@ -32,6 +37,7 @@ import retrofit2.Response;
 
 public class MainActivity extends AppCompatActivity implements RecipeAdapter.OnItemClickListener, ConnectivityReceiver.ConnectivityReceiverListener {
 
+    @Nullable private SimpleIdlingResource mIdlingResource;
     @BindView(R.id.rv_recipe) RecyclerView mRecyclerView;
     public static String RECIPE = "RECIPE";
     public static String STORED_RECIPE = "STORED_RECIPE";
@@ -130,5 +136,14 @@ public class MainActivity extends AppCompatActivity implements RecipeAdapter.OnI
     @Override
     public void onNetworkConnectionChanged(boolean isConnected) {
         showSnack(isConnected);
+    }
+
+    @VisibleForTesting
+    @NonNull
+    public IdlingResource getIdlingResource() {
+        if (mIdlingResource == null) {
+            mIdlingResource = new SimpleIdlingResource();
+        }
+        return mIdlingResource;
     }
 }
