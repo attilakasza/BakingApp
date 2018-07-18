@@ -3,6 +3,18 @@
     <dimen name="cv_ingredient_margin">5dp</dimen>
     <dimen name="tv_ingredient_padding">16dp</dimen>
 
+    <!-- fragment_step_sw600dp_land -->
+    <dimen name="iv_thumbnail_tablet_land">370dp</dimen>
+    <dimen name="fragment_step_tablet_land_margin">15dp</dimen>
+    <dimen name="fragment_step_tablet_land_padding">20dp</dimen>
+    <dimen name="iv_thumbnail">216dp</dimen>
+
+    <!-- fragment_step -->
+    <dimen name="iv_thumbnail_width">384dp</dimen>
+    <dimen name="fragment_step_margin">15dp</dimen>
+    <dimen name="fragment_step_padding">20dp</dimen>
+    <dimen name="fragment_container_steps_width">333dp</dimen>
+
     <!--
 Refer to App Widget Documentation for margin information
 http://developer.android.com/guide/topics/appwidgets/index.html#CreatingLayout
