@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/background"
     tools:context=".fragments.RecipeFragment">
 
     <LinearLayout
@@ -15,13 +16,18 @@
             android:id="@+id/cv_ingredient"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="@dimen/cv_ingredient_margin">
+            android:layout_marginBottom="@dimen/fragment_recipe_bottom_margin"
+            android:layout_marginEnd="@dimen/fragment_recipe_end_margin"
+            android:layout_marginStart="@dimen/fragment_recipe_start_margin"
+            android:layout_marginTop="@dimen/fragment_recipe_top_margin"
+            android:backgroundTint="@color/colorPrimaryDark">
 
             <TextView
                 android:id="@+id/tv_ingredient"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:padding="@dimen/tv_ingredient_padding" />
+                android:padding="@dimen/tv_ingredient_padding"
+                android:textColor="@android:color/white" />
         </android.support.v7.widget.CardView>
 
         <android.support.v7.widget.RecyclerView

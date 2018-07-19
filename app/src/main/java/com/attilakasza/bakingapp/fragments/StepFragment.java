@@ -111,7 +111,7 @@ public class StepFragment extends Fragment {
                 userAgent), new DefaultExtractorsFactory(), null, null);
         if (mPosition != C.TIME_UNSET) mExoPlayer.seekTo(mPosition);
         mExoPlayer.prepare(mediaSource);
-        mExoPlayer.setPlayWhenReady(true);
+        mExoPlayer.setPlayWhenReady(false);
     }
 
     @Override

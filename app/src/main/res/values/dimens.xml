@@ -15,6 +15,12 @@
     <dimen name="fragment_step_padding">20dp</dimen>
     <dimen name="fragment_container_steps_width">333dp</dimen>
 
+    <!-- fragment_recipe -->
+    <dimen name="fragment_recipe_bottom_margin">8dp</dimen>
+    <dimen name="fragment_recipe_top_margin">16dp</dimen>
+    <dimen name="fragment_recipe_end_margin">16dp</dimen>
+    <dimen name="fragment_recipe_start_margin">16dp</dimen>
+
     <!-- activity_main -->
     <dimen name="rv_top_padding">8dp</dimen>
 
@@ -27,6 +33,15 @@
     <dimen name="recipe_card_image_padding">16dp</dimen>
     <dimen name="recipe_card_text_size">20sp</dimen>
 
+    <!-- item_step -->
+    <dimen name="step_card_top_margin">8dp</dimen>
+    <dimen name="step_card_bottom_margin">8dp</dimen>
+    <dimen name="step_card_start_margin">16dp</dimen>
+    <dimen name="step_card_end_margin">16dp</dimen>
+    <dimen name="step_card_image_padding">16dp</dimen>
+    <dimen name="step_card_text_size">15sp</dimen>
+    <dimen name="step_card_text_padding">2dp</dimen>
+    <dimen name="step_card_layout_padding">15dp</dimen>
 
     <!--
 Refer to App Widget Documentation for margin information

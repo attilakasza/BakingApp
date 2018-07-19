@@ -44,6 +44,6 @@ public class FragmentPagerAdapter extends android.support.v4.app.FragmentPagerAd
     @Override
     public CharSequence getPageTitle(int position) {
         // Generate title based on item position
-        return position + ". step";
+        return "Step " + position;
     }
 }

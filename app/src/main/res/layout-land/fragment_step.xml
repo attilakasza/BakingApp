@@ -4,20 +4,22 @@
     style="@style/Theme.AppCompat.NoActionBar"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/background"
     android:orientation="vertical"
     tools:context=".fragments.StepFragment">
 
     <ImageView
         android:id="@+id/iv_thumbnail"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="@dimen/iv_thumbnail"
+        android:layout_height="@dimen/iv_thumbnail"
+        android:contentDescription="@string/no_video"
         android:visibility="gone" />
 
     <FrameLayout
         android:id="@+id/main_media_frame"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#000000">
+        android:background="@color/background">
 
         <com.google.android.exoplayer2.ui.SimpleExoPlayerView
             android:id="@+id/player_view"
