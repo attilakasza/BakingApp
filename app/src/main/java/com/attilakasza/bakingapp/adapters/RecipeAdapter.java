@@ -1,7 +1,6 @@
 package com.attilakasza.bakingapp.adapters;
 
 import android.content.Context;
-import android.net.Uri;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -40,12 +39,17 @@ public class RecipeAdapter extends RecyclerView.Adapter<RecipeAdapter.RecipeView
         String name = mRecipes.get(position).getmName();
         holder.textViewRecipe.setText(name);
 
-        String imageUrl = mRecipes.get(position).getmImage();
-        if (!imageUrl.isEmpty()) {
-            Picasso.with(mContext)
-                    .load(Uri.parse(imageUrl))
-                    .into(holder.imageViewRecipe);
+        int icon = R.drawable.ic_error;
+        switch (position){
+            case 0:  icon = R.drawable.ic_nutella_pie; break;
+            case 1:  icon = R.drawable.ic_brownie; break;
+            case 2:  icon = R.drawable.ic_yellow_cake; break;
+            case 3:  icon = R.drawable.ic_cheesecake; break;
         }
+            Picasso.with(mContext)
+                    .load(icon)
+                    .placeholder(icon)
+                    .into(holder.imageViewRecipe);
     }
 
     @Override
