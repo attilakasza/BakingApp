@@ -2,24 +2,40 @@
     android:id="@+id/widget_layout_main"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="#aab2b4b2"
+    android:background="@color/colorWidget"
     android:orientation="vertical"
     android:paddingEnd="@dimen/widget_layout_padding"
     android:paddingStart="@dimen/widget_layout_padding">
 
-    <TextView
-        android:id="@+id/widget_name"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingBottom="@dimen/widget_text_padding"
-        android:paddingTop="@dimen/widget_text_padding"
-        android:text="@string/ingredients"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:textColor="@android:color/white" />
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/widget_layout_bottom_padding"
+        android:paddingTop="@dimen/widget_layout_top_padding">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingEnd="@dimen/widget_layout_end_padding"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/widget_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/widget_text_padding"
+            android:paddingTop="@dimen/widget_text_padding"
+            android:text="@string/ingredients"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/colorPrimary" />
+
+    </LinearLayout>
 
     <ListView
         android:id="@+id/widget_list"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        android:textColor="@android:color/white" />
 
 </LinearLayout>
