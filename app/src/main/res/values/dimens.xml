@@ -11,9 +11,10 @@
 
     <!-- fragment_step -->
     <dimen name="iv_thumbnail_width">384dp</dimen>
-    <dimen name="fragment_step_margin">15dp</dimen>
+    <dimen name="fragment_step_margin">16dp</dimen>
     <dimen name="fragment_step_padding">20dp</dimen>
     <dimen name="fragment_container_steps_width">338dp</dimen>
+    <dimen name="fragment_step_tablet_land_iv_thumbnail">100dp</dimen>
 
     <!-- fragment_recipe -->
     <dimen name="fragment_recipe_bottom_margin">8dp</dimen>
