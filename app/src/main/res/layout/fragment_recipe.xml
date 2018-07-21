@@ -1,40 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_step"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/background"
+    android:orientation="vertical"
     tools:context=".fragments.RecipeFragment">
 
-    <LinearLayout
-        android:id="@+id/ll_step"
+    <android.support.constraint.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:layout_marginBottom="@dimen/fragment_recipe_bottom_margin"
+        android:layout_marginTop="@dimen/fragment_recipe_top_margin">
 
         <android.support.v7.widget.CardView
             android:id="@+id/cv_ingredient"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/fragment_recipe_bottom_margin"
             android:layout_marginEnd="@dimen/fragment_recipe_end_margin"
             android:layout_marginStart="@dimen/fragment_recipe_start_margin"
             android:layout_marginTop="@dimen/fragment_recipe_top_margin"
-            android:backgroundTint="@color/colorPrimaryDark">
+            android:backgroundTint="@color/colorPrimaryDark"
+            app:cardCornerRadius="@dimen/fragment_recipe_card_corner"
+            app:cardElevation="@dimen/fragment_recipe_card_elevation">
 
             <TextView
                 android:id="@+id/tv_ingredient"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/fragment_recipe_ingredients_top_margin"
                 android:padding="@dimen/tv_ingredient_padding"
                 android:textColor="@android:color/white" />
         </android.support.v7.widget.CardView>
 
-        <android.support.v7.widget.RecyclerView
-            android:id="@+id/rv_step"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/fragment_recipe_text_start_margin"
+            android:layout_marginTop="@dimen/fragment_recipe_text_top_margin"
+            android:background="@drawable/rounded_rectangle"
+            android:paddingBottom="@dimen/fragment_recipe_text_bottom_padding"
+            android:paddingEnd="@dimen/fragment_recipe_text_end_padding"
+            android:paddingStart="@dimen/fragment_recipe_text_start_padding"
+            android:paddingTop="@dimen/fragment_recipe_text_top_padding"
+            android:text="@string/ingredients"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/fragment_recipe_text_size"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    </LinearLayout>
+    </android.support.constraint.ConstraintLayout>
 
-</FrameLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_step"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

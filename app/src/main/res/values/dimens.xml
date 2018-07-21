@@ -13,13 +13,24 @@
     <dimen name="iv_thumbnail_width">384dp</dimen>
     <dimen name="fragment_step_margin">15dp</dimen>
     <dimen name="fragment_step_padding">20dp</dimen>
-    <dimen name="fragment_container_steps_width">333dp</dimen>
+    <dimen name="fragment_container_steps_width">338dp</dimen>
 
     <!-- fragment_recipe -->
     <dimen name="fragment_recipe_bottom_margin">8dp</dimen>
     <dimen name="fragment_recipe_top_margin">16dp</dimen>
     <dimen name="fragment_recipe_end_margin">16dp</dimen>
     <dimen name="fragment_recipe_start_margin">16dp</dimen>
+    <dimen name="fragment_recipe_card_corner">5dp</dimen>
+    <dimen name="fragment_recipe_card_elevation">0dp</dimen>
+    <dimen name="fragment_recipe_ingredients_top_margin">60dp</dimen>
+    <dimen name="fragment_recipe_text_start_margin">7dp</dimen>
+    <dimen name="fragment_recipe_text_top_margin">20dp</dimen>
+    <dimen name="fragment_recipe_text_top_padding">8dp</dimen>
+    <dimen name="fragment_recipe_text_bottom_padding">8dp</dimen>
+    <dimen name="fragment_recipe_text_end_padding">22dp</dimen>
+    <dimen name="fragment_recipe_text_start_padding">24dp</dimen>
+    <dimen name="fragment_recipe_text_size">22sp</dimen>
+
 
     <!-- activity_main -->
     <dimen name="rv_top_padding">8dp</dimen>
