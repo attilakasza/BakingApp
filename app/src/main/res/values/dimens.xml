@@ -32,6 +32,10 @@
     <dimen name="fragment_recipe_text_start_padding">24dp</dimen>
     <dimen name="fragment_recipe_text_size">22sp</dimen>
 
+    <!-- fragment_recipe_land -->
+    <dimen name="fragment_recipe_land_rv_top_margin">8dp</dimen>
+    <dimen name="fragment_recipe_land_text_top_margin">35dp</dimen>
+
 
     <!-- activity_main -->
     <dimen name="rv_top_padding">8dp</dimen>
