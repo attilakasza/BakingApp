@@ -70,9 +70,9 @@ public class RecipeFragment extends Fragment {
             String ingredient = ingredients.get(i).getmIngredient();
 
             if (i < (ingredients.size()-1)) {
-                all.append(quantity).append(measure).append("   ").append(ingredient).append("\n");
+                all.append(quantity).append(" ").append(measure).append("   ").append(ingredient).append("\n");
             } else {
-                all.append(quantity).append(measure).append("   ").append(ingredient);
+                all.append(quantity).append(" ").append(measure).append("   ").append(ingredient);
             }
         }
         mTextView.setText(all.toString());
