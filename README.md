@@ -2,28 +2,30 @@
 
 Udacity’s Android Developer Nanodegree project <br/>
 
-This is an app that will allow a user to select a recipe and see video guided steps for how to complete it.
+This app will allow a user to select a recipe and see video guided steps for how to complete it.
 
 ## Feature
 
-- Use Fragments to create a responsive design that works on phones and tablets
-- Handle error cases (API)
-- Leverage a third-party library in your app
-- Use Exoplayer to display videos
-- Add a widget to show recipe ingredients on home screen
-- UI Test with Espresso
+- Application uses Fragments to create a responsive design that works on phones and tablets
+- Application utilizes a third-party library to enhance the app's features.
+- Application uses Exoplayer to display videos.
+- Application makes use of Espresso to test aspects of the UI.
+- Application has a widget to show recipe ingredients on home screen
+- Application handles error cases (unexpected input in JSON data)
 
 ## Libraries
 
 - Gson
 - Picasso
 - ButterKnife
-- Retrofit
+- Retrofit 2
 - ExoPlayer
 - Espresso
 
 ## Screenshots
 
+<br/>
+<br/>
 <img src="screenshots/screenshots.png">
 <br/>
 <br/>
@@ -34,6 +36,10 @@ This is an app that will allow a user to select a recipe and see video guided st
 <br/>
 <br/>
 <br/> 
+<p align="center">
+  <img src="screenshots/gif_port.gif">
+</p>
+<br/>
 
 ## License
 
