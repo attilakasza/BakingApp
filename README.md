@@ -1,17 +1,19 @@
 # BakingApp
 
-Udacity’s Android Developer Nanodegree project <br/>
+*Udacity’s Android Developer Nanodegree project* <br/>
 
-This app will allow a user to select a recipe and see video guided steps for how to complete it.
+This Android app allows users to select a recipe and see video guided steps for how to complete it.
+The recipes contain instructions and ingredients but not all steps of the recipe have a video.
+The Widget displays the ingredient list for the <br/> desired recipe.
 
 ## Feature
 
-- Application uses Fragments to create a responsive design that works on phones and tablets
-- Application utilizes a third-party library to enhance the app's features.
-- Application uses Exoplayer to display videos.
-- Application makes use of Espresso to test aspects of the UI.
-- Application has a widget to show recipe ingredients on home screen
-- Application handles error cases (unexpected input in JSON data)
+- App uses Fragments to create a responsive design that works on phones and tablets
+- App utilizes a third-party library to enhance the app's features
+- App uses Exoplayer to display videos
+- App makes use of Espresso to test aspects of the UI
+- App has a Widget 
+- App handles error cases (unexpected input in JSON data)
 
 ## Libraries
 
@@ -23,8 +25,6 @@ This app will allow a user to select a recipe and see video guided steps for how
 - Espresso
 
 ## Screenshots
-
-<br/>
 <br/>
 <img src="screenshots/screenshots.png">
 <br/>
