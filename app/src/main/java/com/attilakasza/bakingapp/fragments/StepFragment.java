@@ -74,14 +74,14 @@ public class StepFragment extends Fragment {
 
         mVideoUrl = mSteps.getmVideoUrl();
         String thumbnailUrl = mSteps.getmThumbnailUrl();
-        if (!mVideoUrl.isEmpty()) {
+        if (mVideoUrl != null && !mVideoUrl.isEmpty()) {
             mThumbnail.setVisibility(View.GONE);
             initializeExoPlayer(Uri.parse(mVideoUrl));
         } else {
             mThumbnail.setVisibility(View.VISIBLE);
             mExoPlayerView.setVisibility(View.GONE);
             mFrame.setVisibility(View.GONE);
-            if (!thumbnailUrl.isEmpty()) {
+            if (thumbnailUrl != null && !thumbnailUrl.isEmpty()) {
                 Picasso.with(getContext())
                         .load(Uri.parse(thumbnailUrl))
                         .placeholder(R.drawable.ic_videocam_off)
