@@ -1,6 +1,5 @@
 package com.attilakasza.bakingapp.activities;
 
-import android.graphics.Color;
 import android.os.Bundle;
 import android.support.design.widget.Snackbar;
 import android.support.v4.app.FragmentManager;
@@ -123,7 +122,7 @@ public class DetailActivity extends AppCompatActivity implements StepAdapter.OnI
 
             View sbView = snackbar.getView();
             TextView textView = sbView.findViewById(android.support.design.R.id.snackbar_text);
-            textView.setTextColor(Color.RED);
+            textView.setTextColor(getResources().getColor(R.color.colorSnackbar));
             snackbar.show();
         }
     }

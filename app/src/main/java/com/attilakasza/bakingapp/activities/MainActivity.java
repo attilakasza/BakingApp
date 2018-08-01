@@ -4,7 +4,6 @@ import android.appwidget.AppWidgetManager;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.graphics.Color;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -124,7 +123,7 @@ public class MainActivity extends AppCompatActivity implements RecipeAdapter.OnI
 
             View sbView = snackbar.getView();
             TextView textView = sbView.findViewById(android.support.design.R.id.snackbar_text);
-            textView.setTextColor(Color.RED);
+            textView.setTextColor(getResources().getColor(R.color.colorSnackbar));
             snackbar.show();
         }
     }
