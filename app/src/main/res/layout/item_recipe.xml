@@ -15,17 +15,21 @@
 
         <ImageView
             android:id="@+id/iv_recipe"
-            android:layout_width="wrap_content"
+            android:layout_width="@dimen/recipe_card_image_width"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/recipe_card_image_start_margin"
             android:contentDescription="@string/cake"
-            android:padding="@dimen/recipe_card_image_padding" />
+            android:padding="@dimen/recipe_card_image_padding"
+            android:tint="@color/background" />
 
         <TextView
             android:id="@+id/tv_recipe"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
-            android:textColor="@android:color/white"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/recipe_card_text_start_margin"
+            android:textColor="@color/background"
             android:textSize="@dimen/recipe_card_text_size" />
 
     </LinearLayout>
