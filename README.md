@@ -3,7 +3,7 @@
 *Udacity’s Android Developer Nanodegree project* <br/>
 
 This Android app allows users to select a recipe and see video guided steps for how to complete it.
-The recipes contain instructions and ingredients but not all steps of the recipe have a video.
+The recipes contain <br/> instructions and ingredients but not all steps of the recipe have a video.
 The Widget displays the ingredient list for the <br/> desired recipe.
 
 ## Feature
@@ -26,9 +26,9 @@ The Widget displays the ingredient list for the <br/> desired recipe.
 
 ## Screenshots
 <br/>
-<img src="screenshots/screenshots.png">
+  <img src="screenshots/screenshots.png">
 <br/>
-<br/>
+  <img src="screenshots/screenshots_tablet.png">
 <br/>
 <p align="center">
   <img src="screenshots/gif_tablet.gif">
