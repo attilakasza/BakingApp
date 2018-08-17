@@ -4,28 +4,28 @@
     android:layout_height="wrap_content"
     android:background="@color/colorWidget"
     android:orientation="vertical"
-    android:paddingEnd="@dimen/widget_layout_padding"
-    android:paddingStart="@dimen/widget_layout_padding">
+    android:paddingEnd="@dimen/iwp_linear_layout_padding_end"
+    android:paddingStart="@dimen/iwp_linear_layout_padding_start">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:paddingBottom="@dimen/widget_layout_bottom_padding"
-        android:paddingTop="@dimen/widget_layout_top_padding">
+        android:paddingBottom="@dimen/iwp_linear_layout_padding_bottom"
+        android:paddingTop="@dimen/iwp_linear_layout_padding_top">
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingEnd="@dimen/widget_layout_end_padding"
+            android:paddingEnd="@dimen/iwp_image_view_padding_end"
             android:src="@mipmap/ic_launcher" />
 
         <TextView
             android:id="@+id/widget_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingBottom="@dimen/widget_text_padding"
-            android:paddingTop="@dimen/widget_text_padding"
+            android:paddingBottom="@dimen/iwp_text_view_padding_bottom"
+            android:paddingTop="@dimen/iwp_text_view_padding_top"
             android:text="@string/ingredients"
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:textColor="@color/colorPrimary" />

@@ -3,6 +3,14 @@
     <dimen name="cv_ingredient_margin">5dp</dimen>
     <dimen name="tv_ingredient_padding">16dp</dimen>
 
+    <!-- exo_playback_control_view -->
+    <dimen name="epcv_text_view_padding_left">4dp</dimen>
+    <dimen name="epcv_text_view_padding_right">4dp</dimen>
+    <dimen name="epcv_text_view_size">14sp</dimen>
+    <dimen name="epcv_seek_bar_width">0dp</dimen>
+    <dimen name="epcv_seek_bar_height">32dp</dimen>
+
+
     <!-- fragment_step_sw600dp_land -->
     <dimen name="iv_thumbnail_tablet_land">370dp</dimen>
     <dimen name="fragment_step_tablet_land_margin">15dp</dimen>
@@ -43,40 +51,45 @@
     <dimen name="rv_top_padding">8dp</dimen>
 
     <!-- item_recipe -->
-    <dimen name="recipe_card_height">130dp</dimen>
-    <dimen name="recipe_card_top_margin">8dp</dimen>
-    <dimen name="recipe_card_bottom_margin">8dp</dimen>
-    <dimen name="recipe_card_start_margin">16dp</dimen>
-    <dimen name="recipe_card_end_margin">16dp</dimen>
-    <dimen name="recipe_card_image_padding">16dp</dimen>
+    <dimen name="ir_card_view_height">130dp</dimen>
+    <dimen name="ir_card_view_margin_bottom">8dp</dimen>
+    <dimen name="ir_card_view_margin_end">16dp</dimen>
+    <dimen name="ir_card_view_margin_start">16dp</dimen>
+    <dimen name="ir_card_view_margin_top">8dp</dimen>
+    <dimen name="ir_image_view_width">130dp</dimen>
+    <dimen name="ir_image_view_margin_start">8dp</dimen>
+    <dimen name="ir_image_view_padding">16dp</dimen>
+    <dimen name="ir_text_view_margin_start">16dp</dimen>
+
     <dimen name="recipe_card_text_size">22sp</dimen>
-    <dimen name="recipe_card_image_width">130dp</dimen>
-    <dimen name="recipe_card_image_start_margin">8dp</dimen>
-    <dimen name="recipe_card_text_start_margin">16dp</dimen>
 
 
     <!-- item_step -->
-    <dimen name="step_card_top_margin">8dp</dimen>
-    <dimen name="step_card_bottom_margin">8dp</dimen>
-    <dimen name="step_card_start_margin">16dp</dimen>
-    <dimen name="step_card_end_margin">16dp</dimen>
+    <dimen name="is_card_view_margin_bottom">8dp</dimen>
+    <dimen name="is_card_view_margin_end">16dp</dimen>
+    <dimen name="is_card_view_margin_start">16dp</dimen>
+    <dimen name="is_card_view_margin_top">8dp</dimen>
+    <dimen name="is_linear_layout_padding">15dp</dimen>
+    <dimen name="is_text_view_padding">2dp</dimen>
+    <dimen name="is_text_view_size">15sp</dimen>
+
     <dimen name="step_card_image_padding">16dp</dimen>
-    <dimen name="step_card_text_size">15sp</dimen>
-    <dimen name="step_card_text_padding">2dp</dimen>
     <dimen name="step_card_layout_padding">15dp</dimen>
 
-    <!--
-Refer to App Widget Documentation for margin information
-http://developer.android.com/guide/topics/appwidgets/index.html#CreatingLayout
-    -->
-    <dimen name="widget_margin">8dp</dimen>
-    <dimen name="widget_text_padding">10dp</dimen>
-    <dimen name="widget_layout_padding">5dp</dimen>
-    <dimen name="widget_layout_bottom_padding">5dp</dimen>
-    <dimen name="widget_layout_top_padding">2dp</dimen>
-    <dimen name="widget_layout_end_padding">8dp</dimen>
-    <dimen name="widget_item_layout_margin">3dp</dimen>
-    <dimen name="widget_item_text_margin">9dp</dimen>
-    <dimen name="widget_item_text_quantity_size">13sp</dimen>
-    <dimen name="widget_item_text_ingredient_size">12sp</dimen>
+
+    <!-- ingredient_widget_item -->
+    <dimen name="iwi_linear_layout_margin">3dp</dimen>
+    <dimen name="iwi_text_view_quantity_size">13sp</dimen>
+    <dimen name="iwi_text_view_margin_start">9dp</dimen>
+    <dimen name="iwi_text_view_ingredient_size">12sp</dimen>
+
+    <!-- ingredient_widget_provider -->
+    <dimen name="iwp_linear_layout_padding_end">5dp</dimen>
+    <dimen name="iwp_linear_layout_padding_start">5dp</dimen>
+    <dimen name="iwp_linear_layout_padding_bottom">5dp</dimen>
+    <dimen name="iwp_linear_layout_padding_top">2dp</dimen>
+    <dimen name="iwp_image_view_padding_end">8dp</dimen>
+    <dimen name="iwp_text_view_padding_bottom">10dp</dimen>
+    <dimen name="iwp_text_view_padding_top">10dp</dimen>
+
 </resources>
