@@ -17,6 +17,7 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:contentDescription="@string/app_icon"
             android:paddingEnd="@dimen/iwp_image_view_padding_end"
             android:src="@mipmap/ic_launcher" />
 
