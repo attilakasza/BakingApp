@@ -11,26 +11,26 @@
     <android.support.constraint.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="@dimen/fragment_recipe_bottom_margin"
-        android:layout_marginTop="@dimen/fragment_recipe_top_margin">
+        android:layout_marginBottom="@dimen/fr_constraint_layout_margin_bottom"
+        android:layout_marginTop="@dimen/fr_constraint_layout_margin_top">
 
         <android.support.v7.widget.CardView
             android:id="@+id/cv_ingredient"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="@dimen/fragment_recipe_end_margin"
-            android:layout_marginStart="@dimen/fragment_recipe_start_margin"
-            android:layout_marginTop="@dimen/fragment_recipe_top_margin"
+            android:layout_marginEnd="@dimen/fr_card_view_margin_end"
+            android:layout_marginStart="@dimen/fr_card_view_margin_start"
+            android:layout_marginTop="@dimen/fr_card_view_margin_top"
             android:backgroundTint="@color/colorPrimaryDark"
-            app:cardCornerRadius="@dimen/fragment_recipe_card_corner"
-            app:cardElevation="@dimen/fragment_recipe_card_elevation">
+            app:cardCornerRadius="@dimen/fr_card_view_corner_radius"
+            app:cardElevation="@dimen/fr_card_view_elevation">
 
             <TextView
                 android:id="@+id/tv_ingredient"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/fragment_recipe_ingredients_top_margin"
-                android:padding="@dimen/tv_ingredient_padding"
+                android:layout_marginTop="@dimen/fr_text_view_ingredient_margin_top"
+                android:padding="@dimen/fr_text_view_ingredient_padding"
                 android:textColor="@android:color/white" />
         </android.support.v7.widget.CardView>
 
@@ -38,16 +38,16 @@
             android:id="@+id/title_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/fragment_recipe_text_start_margin"
-            android:layout_marginTop="@dimen/fragment_recipe_text_top_margin"
+            android:layout_marginStart="@dimen/fr_text_view_margin_start"
+            android:layout_marginTop="@dimen/fr_text_view_margin_top"
             android:background="@drawable/rounded_rectangle"
-            android:paddingBottom="@dimen/fragment_recipe_text_bottom_padding"
-            android:paddingEnd="@dimen/fragment_recipe_text_end_padding"
-            android:paddingStart="@dimen/fragment_recipe_text_start_padding"
-            android:paddingTop="@dimen/fragment_recipe_text_top_padding"
+            android:paddingBottom="@dimen/fr_text_view_padding_bottom"
+            android:paddingEnd="@dimen/fr_text_view_padding_end"
+            android:paddingStart="@dimen/fr_text_view_padding_start"
+            android:paddingTop="@dimen/fr_text_view_padding_top"
             android:text="@string/ingredients"
             android:textColor="@android:color/white"
-            android:textSize="@dimen/fragment_recipe_text_size"
+            android:textSize="@dimen/fr_text_view_text_size"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 

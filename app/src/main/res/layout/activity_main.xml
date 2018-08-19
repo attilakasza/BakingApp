@@ -11,6 +11,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:paddingTop="@dimen/rv_top_padding" />
+        android:paddingTop="@dimen/am_recycler_view_padding_top" />
 
 </android.support.constraint.ConstraintLayout>

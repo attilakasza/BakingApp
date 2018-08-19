@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="cv_ingredient_margin">5dp</dimen>
-    <dimen name="tv_ingredient_padding">16dp</dimen>
+
+    <!-- activity_detail_sw600dp_land -->
+    <dimen name="adsl_frame_layout_width">338dp</dimen>
+
+    <!-- activity_detail_sw600dp_port -->
+    <dimen name="adsp_frame_layout_width">338dp</dimen>
+
+    <!-- activity_main -->
+    <dimen name="am_recycler_view_padding_top">8dp</dimen>
 
     <!-- exo_playback_control_view -->
     <dimen name="epcv_text_view_padding_left">4dp</dimen>
@@ -10,45 +17,86 @@
     <dimen name="epcv_seek_bar_width">0dp</dimen>
     <dimen name="epcv_seek_bar_height">32dp</dimen>
 
-
-    <!-- fragment_step_sw600dp_land -->
-    <dimen name="iv_thumbnail_tablet_land">370dp</dimen>
-    <dimen name="fragment_step_tablet_land_margin">15dp</dimen>
-    <dimen name="fragment_step_tablet_land_padding">20dp</dimen>
-    <dimen name="iv_thumbnail">216dp</dimen>
-
-    <!-- fragment_step -->
-    <dimen name="iv_thumbnail_width">384dp</dimen>
-    <dimen name="fragment_step_margin">16dp</dimen>
-    <dimen name="fragment_step_end_margin">8dp</dimen>
-    <dimen name="fragment_step_start_margin">8dp</dimen>
-    <dimen name="fragment_step_padding">20dp</dimen>
-    <dimen name="fragment_container_steps_width">338dp</dimen>
-    <dimen name="fragment_step_tablet_land_iv_thumbnail">100dp</dimen>
-
     <!-- fragment_recipe -->
-    <dimen name="fragment_recipe_bottom_margin">8dp</dimen>
-    <dimen name="fragment_recipe_top_margin">16dp</dimen>
-    <dimen name="fragment_recipe_end_margin">16dp</dimen>
-    <dimen name="fragment_recipe_start_margin">16dp</dimen>
-    <dimen name="fragment_recipe_card_corner">5dp</dimen>
-    <dimen name="fragment_recipe_card_elevation">0dp</dimen>
-    <dimen name="fragment_recipe_ingredients_top_margin">60dp</dimen>
-    <dimen name="fragment_recipe_text_start_margin">7dp</dimen>
-    <dimen name="fragment_recipe_text_top_margin">20dp</dimen>
-    <dimen name="fragment_recipe_text_top_padding">8dp</dimen>
-    <dimen name="fragment_recipe_text_bottom_padding">8dp</dimen>
-    <dimen name="fragment_recipe_text_end_padding">22dp</dimen>
-    <dimen name="fragment_recipe_text_start_padding">24dp</dimen>
-    <dimen name="fragment_recipe_text_size">22sp</dimen>
+    <dimen name="fr_constraint_layout_margin_bottom">8dp</dimen>
+    <dimen name="fr_constraint_layout_margin_top">16dp</dimen>
+    <dimen name="fr_card_view_margin_end">16dp</dimen>
+    <dimen name="fr_card_view_margin_start">16dp</dimen>
+    <dimen name="fr_card_view_margin_top">16dp</dimen>
+    <dimen name="fr_card_view_corner_radius">5dp</dimen>
+    <dimen name="fr_card_view_elevation">0dp</dimen>
+    <dimen name="fr_text_view_ingredient_margin_top">60dp</dimen>
+    <dimen name="fr_text_view_ingredient_padding">16dp</dimen>
+    <dimen name="fr_text_view_margin_start">7dp</dimen>
+    <dimen name="fr_text_view_margin_top">20dp</dimen>
+    <dimen name="fr_text_view_padding_bottom">8dp</dimen>
+    <dimen name="fr_text_view_padding_end">22dp</dimen>
+    <dimen name="fr_text_view_padding_start">24dp</dimen>
+    <dimen name="fr_text_view_padding_top">8dp</dimen>
+    <dimen name="fr_text_view_text_size">22sp</dimen>
 
     <!-- fragment_recipe_land -->
-    <dimen name="fragment_recipe_land_rv_top_margin">8dp</dimen>
-    <dimen name="fragment_recipe_land_text_top_margin">35dp</dimen>
+    <dimen name="frl_card_view_margin_start">16dp</dimen>
+    <dimen name="frl_card_view_margin_top">16dp</dimen>
+    <dimen name="frl_card_view_corner_radius">5dp</dimen>
+    <dimen name="frl_card_view_elevation">0dp</dimen>
+    <dimen name="frl_text_view_ingredient_margin_top">60dp</dimen>
+    <dimen name="frl_text_view_ingredient_padding">16dp</dimen>
+    <dimen name="frl_text_view_margin_start">7dp</dimen>
+    <dimen name="frl_text_view_margin_top">35dp</dimen>
+    <dimen name="frl_text_view_padding_bottom">8dp</dimen>
+    <dimen name="frl_text_view_padding_end">22dp</dimen>
+    <dimen name="frl_text_view_padding_start">24dp</dimen>
+    <dimen name="frl_text_view_padding_top">8dp</dimen>
+    <dimen name="frl_text_view_text_size">22sp</dimen>
+    <dimen name="frl_recycler_view_margin_top">8dp</dimen>
 
+    <!-- fragment_recipe_sw600dp_land -->
+    <dimen name="frsl_constraint_layout_margin_bottom">8dp</dimen>
+    <dimen name="frsl_constraint_layout_margin_top">16dp</dimen>
+    <dimen name="frsl_card_view_margin_end">16dp</dimen>
+    <dimen name="frsl_card_view_margin_start">16dp</dimen>
+    <dimen name="frsl_card_view_margin_top">16dp</dimen>
+    <dimen name="frsl_card_view_corner_radius">5dp</dimen>
+    <dimen name="frsl_card_view_elevation">0dp</dimen>
+    <dimen name="frsl_text_view_ingredient_margin_top">60dp</dimen>
+    <dimen name="frsl_text_view_ingredient_padding">16dp</dimen>
+    <dimen name="frsl_text_view_margin_start">7dp</dimen>
+    <dimen name="frsl_text_view_margin_top">20dp</dimen>
+    <dimen name="frsl_text_view_padding_bottom">8dp</dimen>
+    <dimen name="frsl_text_view_padding_end">22dp</dimen>
+    <dimen name="frsl_text_view_padding_start">24dp</dimen>
+    <dimen name="frsl_text_view_padding_top">8dp</dimen>
+    <dimen name="frsl_text_view_text_size">22sp</dimen>
 
-    <!-- activity_main -->
-    <dimen name="rv_top_padding">8dp</dimen>
+    <!-- fragment_step -->
+    <dimen name="fs_image_view_width">216dp</dimen>
+    <dimen name="fs_image_view_height">216dp</dimen>
+    <dimen name="fs_image_view_margin">16dp</dimen>
+    <dimen name="fs_frame_layout_height">216dp</dimen>
+    <dimen name="fs_frame_layout_margin">16dp</dimen>
+    <dimen name="fs_exo_player_view_margin">16dp</dimen>
+    <dimen name="fs_exo_player_view_margin_end">8dp</dimen>
+    <dimen name="fs_exo_player_view_margin_start">8dp</dimen>
+    <dimen name="fs_card_view_margin">16dp</dimen>
+    <dimen name="fs_text_view_padding">20dp</dimen>
+
+    <!-- fragment_step_land -->
+    <dimen name="fsl_image_view_width">100dp</dimen>
+    <dimen name="fsl_image_view_height">100dp</dimen>
+    <dimen name="fsl_image_view_margin">16dp</dimen>
+    <dimen name="fsl_card_view_margin">16dp</dimen>
+    <dimen name="fsl_text_view_padding">20dp</dimen>
+
+    <!-- fragment_step_sw600dp_land -->
+    <dimen name="fssl_image_view_width">370dp</dimen>
+    <dimen name="fssl_image_view_height">370dp</dimen>
+    <dimen name="fssl_image_view_margin">15dp</dimen>
+    <dimen name="fssl_frame_layout_height">370dp</dimen>
+    <dimen name="fssl_frame_layout_margin">15dp</dimen>
+    <dimen name="fssl_exo_player_view_margin">15dp</dimen>
+    <dimen name="fssl_card_view_margin">15dp</dimen>
+    <dimen name="fssl_text_view_padding">20dp</dimen>
 
     <!-- item_recipe -->
     <dimen name="ir_card_view_height">130dp</dimen>
@@ -60,9 +108,7 @@
     <dimen name="ir_image_view_margin_start">8dp</dimen>
     <dimen name="ir_image_view_padding">16dp</dimen>
     <dimen name="ir_text_view_margin_start">16dp</dimen>
-
-    <dimen name="recipe_card_text_size">22sp</dimen>
-
+    <dimen name="ir_text_view_text_size">22sp</dimen>
 
     <!-- item_step -->
     <dimen name="is_card_view_margin_bottom">8dp</dimen>
@@ -72,10 +118,6 @@
     <dimen name="is_linear_layout_padding">15dp</dimen>
     <dimen name="is_text_view_padding">2dp</dimen>
     <dimen name="is_text_view_size">15sp</dimen>
-
-    <dimen name="step_card_image_padding">16dp</dimen>
-    <dimen name="step_card_layout_padding">15dp</dimen>
-
 
     <!-- ingredient_widget_item -->
     <dimen name="iwi_linear_layout_margin">3dp</dimen>
@@ -91,5 +133,9 @@
     <dimen name="iwp_image_view_padding_end">8dp</dimen>
     <dimen name="iwp_text_view_padding_bottom">10dp</dimen>
     <dimen name="iwp_text_view_padding_top">10dp</dimen>
+
+    <!-- ingredient_widget_provider_info -->
+    <dimen name="iwpi_appwidget_provider_min_height">110dp</dimen>
+    <dimen name="iwpi_appwidget_provider_min_width">210dp</dimen>
 
 </resources>

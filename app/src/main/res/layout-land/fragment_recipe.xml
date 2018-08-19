@@ -16,18 +16,18 @@
             android:id="@+id/cv_ingredient"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/fragment_recipe_start_margin"
-            android:layout_marginTop="@dimen/fragment_recipe_top_margin"
+            android:layout_marginStart="@dimen/frl_card_view_margin_start"
+            android:layout_marginTop="@dimen/frl_card_view_margin_top"
             android:backgroundTint="@color/colorPrimaryDark"
-            app:cardCornerRadius="@dimen/fragment_recipe_card_corner"
-            app:cardElevation="@dimen/fragment_recipe_card_elevation">
+            app:cardCornerRadius="@dimen/frl_card_view_corner_radius"
+            app:cardElevation="@dimen/frl_card_view_elevation">
 
             <TextView
                 android:id="@+id/tv_ingredient"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/fragment_recipe_ingredients_top_margin"
-                android:padding="@dimen/tv_ingredient_padding"
+                android:layout_marginTop="@dimen/frl_text_view_ingredient_margin_top"
+                android:padding="@dimen/frl_text_view_ingredient_padding"
                 android:textColor="@android:color/white" />
         </android.support.v7.widget.CardView>
 
@@ -35,16 +35,16 @@
             android:id="@+id/title_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/fragment_recipe_text_start_margin"
-            android:layout_marginTop="@dimen/fragment_recipe_land_text_top_margin"
+            android:layout_marginStart="@dimen/frl_text_view_margin_start"
+            android:layout_marginTop="@dimen/frl_text_view_margin_top"
             android:background="@drawable/rounded_rectangle"
-            android:paddingBottom="@dimen/fragment_recipe_text_bottom_padding"
-            android:paddingEnd="@dimen/fragment_recipe_text_end_padding"
-            android:paddingStart="@dimen/fragment_recipe_text_start_padding"
-            android:paddingTop="@dimen/fragment_recipe_text_top_padding"
+            android:paddingBottom="@dimen/frl_text_view_padding_bottom"
+            android:paddingEnd="@dimen/frl_text_view_padding_end"
+            android:paddingStart="@dimen/frl_text_view_padding_start"
+            android:paddingTop="@dimen/frl_text_view_padding_top"
             android:text="@string/ingredients"
             android:textColor="@android:color/white"
-            android:textSize="@dimen/fragment_recipe_text_size" />
+            android:textSize="@dimen/frl_text_view_text_size" />
 
     </RelativeLayout>
 
@@ -52,6 +52,6 @@
         android:id="@+id/rv_step"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/fragment_recipe_land_rv_top_margin" />
+        android:layout_marginTop="@dimen/frl_recycler_view_margin_top" />
 
 </LinearLayout>

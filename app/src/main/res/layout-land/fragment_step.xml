@@ -10,10 +10,10 @@
 
     <ImageView
         android:id="@+id/iv_thumbnail"
-        android:layout_width="@dimen/fragment_step_tablet_land_iv_thumbnail"
-        android:layout_height="@dimen/fragment_step_tablet_land_iv_thumbnail"
+        android:layout_width="@dimen/fsl_image_view_width"
+        android:layout_height="@dimen/fsl_image_view_height"
         android:layout_gravity="center_horizontal"
-        android:layout_margin="@dimen/fragment_step_margin"
+        android:layout_margin="@dimen/fsl_image_view_margin"
         android:contentDescription="@string/no_video"
         android:visibility="gone" />
 
@@ -34,7 +34,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_margin="@dimen/fragment_step_margin"
+        android:layout_margin="@dimen/fsl_card_view_margin"
         android:backgroundTint="@color/colorPrimary">
 
         <TextView
@@ -42,7 +42,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:padding="@dimen/fragment_step_padding"
+            android:padding="@dimen/fsl_text_view_padding"
             android:textColor="@android:color/white" />
     </android.support.v7.widget.CardView>
 </LinearLayout>
