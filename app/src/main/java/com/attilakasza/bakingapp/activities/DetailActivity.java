@@ -1,9 +1,9 @@
 package com.attilakasza.bakingapp.activities;
 
 import android.os.Bundle;
-import android.support.design.widget.Snackbar;
-import android.support.v4.app.FragmentManager;
-import android.support.v7.app.AppCompatActivity;
+import com.google.android.material.snackbar.Snackbar;
+import androidx.fragment.app.FragmentManager;
+import androidx.appcompat.app.AppCompatActivity;
 import android.view.View;
 import android.widget.TextView;
 
@@ -121,7 +121,7 @@ public class DetailActivity extends AppCompatActivity implements StepAdapter.OnI
                     .make(findViewById(R.id.fragment_container_steps), getResources().getString(R.string.no_internet), Snackbar.LENGTH_LONG);
 
             View sbView = snackbar.getView();
-            TextView textView = sbView.findViewById(android.support.design.R.id.snackbar_text);
+            TextView textView = sbView.findViewById(com.google.android.material.R.id.snackbar_text);
             textView.setTextColor(getResources().getColor(R.color.colorSnackbar));
             snackbar.show();
         }

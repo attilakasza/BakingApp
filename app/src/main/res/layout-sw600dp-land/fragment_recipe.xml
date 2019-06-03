@@ -8,13 +8,13 @@
     android:orientation="vertical"
     tools:context=".fragments.RecipeFragment">
 
-    <android.support.constraint.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="@dimen/frsl_constraint_layout_margin_bottom"
         android:layout_marginTop="@dimen/frsl_constraint_layout_margin_top">
 
-        <android.support.v7.widget.CardView
+        <androidx.cardview.widget.CardView
             android:id="@+id/cv_ingredient"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -32,7 +32,7 @@
                 android:layout_marginTop="@dimen/frsl_text_view_ingredient_margin_top"
                 android:padding="@dimen/frsl_text_view_ingredient_padding"
                 android:textColor="@android:color/white" />
-        </android.support.v7.widget.CardView>
+        </androidx.cardview.widget.CardView>
 
         <TextView
             android:id="@+id/title_text"
@@ -51,9 +51,9 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-    </android.support.constraint.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <android.support.v7.widget.RecyclerView
+    <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_step"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />

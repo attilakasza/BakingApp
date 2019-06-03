@@ -30,7 +30,7 @@
 
     </FrameLayout>
 
-    <android.support.v7.widget.CardView
+    <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -44,5 +44,5 @@
             android:layout_gravity="center_horizontal"
             android:padding="@dimen/fsl_text_view_padding"
             android:textColor="@android:color/white" />
-    </android.support.v7.widget.CardView>
+    </androidx.cardview.widget.CardView>
 </LinearLayout>

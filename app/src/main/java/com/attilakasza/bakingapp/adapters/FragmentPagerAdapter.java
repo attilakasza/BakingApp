@@ -2,8 +2,8 @@ package com.attilakasza.bakingapp.adapters;
 
 import android.content.Context;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
 
 import com.attilakasza.bakingapp.fragments.StepFragment;
 import com.attilakasza.bakingapp.models.Recipe;
@@ -12,7 +12,7 @@ import java.util.ArrayList;
 
 import static com.attilakasza.bakingapp.fragments.StepsFragment.RECIPE_STEP;
 
-public class FragmentPagerAdapter extends android.support.v4.app.FragmentPagerAdapter {
+public class FragmentPagerAdapter extends androidx.fragment.app.FragmentPagerAdapter {
 
     private Context mContext;
     private ArrayList<Recipe> mRecipes;
